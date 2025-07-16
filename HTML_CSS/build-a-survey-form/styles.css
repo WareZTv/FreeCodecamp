@@ -1,0 +1,79 @@
+body {
+  font-family: Poppins,sans-serif;
+  font-size: 18px;
+  padding: 0;
+  background-color: #2f1743;
+  color: #f8f8ff
+}
+
+main {
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
+  margin: 3rem auto
+}
+
+#title,
+#description {
+  text-align: center;
+  margin: 0.5rem 2rem
+}
+
+#title {
+  font-size: 32px;
+  font-family: Raleway
+}
+
+#description {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+form {
+  margin: 2rem 0;
+  background-color: #40285a
+}
+
+fieldset {
+  border: none
+}
+
+label {
+  display: block;
+  margin: 1em
+}
+
+.multiple-choice-label {
+  margin: 0 1em;
+}
+
+.multiple-choice-label-question {
+  margin-bottom: 0
+}
+
+input, select, textarea{
+  width: 100%;
+  margin-top: 0.5em;
+  min-height: 2em;
+  background-color: #543c6d;
+  border: 1px solid #543c6d;
+  color: #f8f8ff;
+  font-size: 0.9em
+}
+
+textarea {
+  min-height: 6em
+}
+
+input[type="radio"], input[type="checkbox"]{
+  width: unset;
+  min-height: unset;
+  margin-right: 0.5rem
+}
+
+input[type="submit"] {
+  background-color: rgb(195, 92, 226);
+  display: block;
+  width: 25%;
+  margin: 0.5em auto;
+}

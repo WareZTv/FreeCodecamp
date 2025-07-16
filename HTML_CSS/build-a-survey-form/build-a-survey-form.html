@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PetPawradise Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">PetPawradise Survey Form</h1>
+      <p id="description">Thank you for buying our product!</p>
+      <form id="survey-form">
+        <fieldset id="personal-info">
+          <label id="name-label" for="name">What's your name?
+            <input id="name" type="text" name="name" placeholder="Enter you name" required>
+          </label>
+          <label id="email-label" for="email">What's your email?
+            <input id="email" type="email" name="email" placeholder="Enter you email" required>
+          </label>
+          <label id="number-label" for="number">How old are you?
+            <input id="number" type="number" name="age" min="18" max="120" placeholder="select your age" required>
+          </label>
+        </fieldset>
+        <fieldset id="current-role">
+          <label>What do you do for a living?
+            <select id="dropdown" name="job">
+              <option value="">-- Please select --</option>
+              <option value="student">Student</option>
+              <option value="employee">Employee</option>
+              <option value="self_employed">Self-employed</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="unemployed">Unemployed</option>
+              <option value="homemaker">Homemaker</option>
+              <option value="retired">Retired</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset id="pp-experience">
+          <label class="multiple-choice-label-question">Would you recommand our products to a friend?</label>
+          <label for="recommand-yes" class="multiple-choice-label">
+            <input type="radio" id="recommand-yes" name="recommendToFriend" value="yes" required>Yes
+          </label>
+          <label for="recommand-no" class="multiple-choice-label">
+            <input type="radio" id="recommand-no" name="recommendToFriend" value="no">No
+          </label>
+          <label class="multiple-choice-label-question">What is your favorite product?</label>
+          <label for="Dry dog food" class="multiple-choice-label">
+            <input id="dry-dog-food" name="favorite-product" value="dry-dog-food" type="checkbox">Dry Dog Food
+          </label>
+          <label for="dog-treats" class="multiple-choice-label">
+            <input id="dog-treats" name="favorite-product" value="dog-treats" type="checkbox">Dog Treats & Chews
+          </label>
+
+          <label for="dog-toys" class="multiple-choice-label">
+            <input id="dog-toys" name="favorite-product" value="dog-toys" type="checkbox">Dog Toys
+          </label>
+
+          <label for="collars-harnesses" class="multiple-choice-label">
+            <input id="collars-harnesses" name="favorite-product" value="collars-harnesses" type="checkbox">Collars and Harnesses
+          </label>
+
+          <label for="dog-beds" class="multiple-choice-label">
+            <input id="dog-beds" name="favorite-product" value="dog-beds" type="checkbox">Beds and Crates
+          </label>
+        </fieldset>
+        <fieldset id="feedback">
+          <label for="feedback">What improvements could we make?
+            <textarea id="feedback" name="feedback" placeholder="Enter your comment"></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="submit">
+      </form>
+    </main>
+  </body>
+</html>
