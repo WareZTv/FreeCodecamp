@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #4d4e53;
+}
+
+a {
+  display: flex;
+  border-top: 1px solid #4d4e53;
+  height: 50px;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 1.06rem
+}
+
+header{
+  font-size: 1.8rem;
+  color: black;
+}  
+
+#main-doc header {
+  margin-top: 15px;
+}
+
+#main-doc > section:first-of-type header {
+  margin-top: 0;
+}
+
+#nav-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  align-items: flex-start
+  
+}
+
+#navbar {
+  border-right: 3px solid #00161666;
+  width: 300px;
+  position: fixed;
+  height: 100vh
+}
+
+#main-doc {
+  width: calc(100% - 300px);
+  padding: 40px;
+  margin-left: 300px;
+}
+
+p{
+  margin-left: 10px;
+}
+
+code {
+  display: block;
+  margin-left: 15px; 
+  background-color: #f7f7f7;
+  padding: 15px 12px;
+  width: 100%;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  white-space: pre-line;
+  line-height: 1.7
+}
+
+ul {
+  margin-left: 5px
+}
+
+li {
+  line-height: 2
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    display: none
+  }
+  #main-doc {
+    width: 100%;
+    margin-left: 0;
+  }
+}

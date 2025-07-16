@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="nav-header"><span>Python</span><span>Documentation</span></header>
+      <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+      <a class="nav-link" href="#Getting_Started_with_Python">Getting Started with Python</a>
+      <a class="nav-link" href="#Variables_and_Basic_Types">Variables and Basic Types</a>
+      <a class="nav-link" href="#Control_Structures">Control Structures</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#Collections_(Lists,_Tuples,_Dictionaries,_Sets)">Collections (Lists, Tuples, Dictionaries, Sets)</a>
+      <a class="nav-link" href="#Input_and_Output">Input and Output</a>
+      <a class="nav-link" href="#Modules_and_Libraries">Modules and Libraries</a>
+      <a class="nav-link" href="#Error_and_Exception_Handling">Error and Exception Handling</a>
+      <a class="nav-link" href="#Object-Oriented_Programming_(OOP)">Object-Oriented Programming (OOP)</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_Python">
+        <header>Introduction to Python</header>
+        <p>Python is a high-level, interpreted programming language known for its clear syntax and readability. Designed to be easy to learn and use, Python is widely used in web development, data science, automation, artificial intelligence, and more. Its large standard library and active community make it a powerful tool for both beginners and experienced developers.</p>
+        <p>Whether you're writing your first script or building complex systems, Python offers a flexible and efficient environment to get things done quickly and cleanly.</p>
+      </section>
+      <section class="main-section" id="Getting_Started_with_Python">
+        <header>Getting Started with Python</header>
+        <p>To begin coding in Python, all you need is a text editor and the Python interpreter installed on your system.</p>
+        <p>Here’s your first Python program:</p>
+        <code>print("Hello, world!")</code>
+      </section>
+      <section class="main-section" id="Variables_and_Basic_Types">
+        <header>Variables and Basic Types</header>
+        <p>In Python, variables are created by assignment. No type declaration is needed.</p>
+        <code>name = "Alice"     # str
+              age = 30           # int
+              height = 1.65      # float
+              is_student = True  # bool</code>
+        <p>Common types:</p>
+        <ul>
+          <li>int → integers (42)</li>
+          <li>float → decimals (3.14)</li>
+          <li>str → text ("hello")</li>
+          <li>bool → True / False</li>
+          <li>None → represents "nothing"</li>
+        </ul>
+        <p>Check a variable’s type:</p>
+        <code>type(name)  # class 'str'</code>
+        <p>Convert types:</p>
+        <code>int("10"), str(123), float("2.5"), bool("hi")</code>
+      </section>
+      <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <p>if / elif / else</p>
+        <code>x = 10
+              if x > 0:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Positive")
+              elif x == 0:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Zero")
+              else:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Negative")</code
+        <p>while</p>
+        <code>i = 0
+              while i < 3:
+&nbsp;&nbsp;&nbsp;&nbsp;print(i)
+&nbsp;&nbsp;&nbsp;&nbsp;i += 1</code
+        <p>for</p>
+        <code>for i in range(3):
+&nbsp;&nbsp;&nbsp;&nbsp;print(i)</code
+        <p>break / continue / pass</p>
+        <code>for i in range(5):
+&nbsp;&nbsp;&nbsp;&nbsp;if i == 3:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue
+&nbsp;&nbsp;&nbsp;&nbsp;print(i)</code>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>Functions let you group reusable code into blocks.</p>
+        <p>Defining a function</p>
+        <code>def greet(name):
+&nbsp;&nbsp;&nbsp;&nbsp;print("Hello", name)</code>
+        <p>Calling a function</p>
+        <code>greet("Alice")</code>
+        <p>Return a value</p>
+        <code>def square(x):
+&nbsp;&nbsp;&nbsp;&nbsp;return x * x
+
+              result = square(4)  # 16</code>
+        <p>Functions can have any number of parameters, with or without default values:</p>
+        <code>def greet(name="World"):
+&nbsp;&nbsp;&nbsp;&nbsp;print("Hello", name)
+</code>
+      </section>
+      <section class="main-section" id="Collections_(Lists,_Tuples,_Dictionaries,_Sets)">
+        <header>Collections (Lists, Tuples, Dictionaries, Sets)</header>
+        <p>Python offers built-in collection types to store multiple values.</p>
+        <p>List ([])</p>
+        <p>Ordered, changeable.</p>
+        <code>fruits = ["apple", "banana", "cherry"]
+              fruits[0]       # "apple"
+              fruits.append("orange")</code>
+        <p>Tuple (())</p>
+        <p>Ordered, immutable.</p>
+        <code>point = (3, 4)
+              x = point[0]</code>
+        <p>Dictionary ({})</p>
+        <p>Key–value pairs, unordered (since Python 3.7: ordered).</p>
+        <code>person = {"name": "Alice", "age": 30}
+              person["name"]   # "Alice"</code>
+        <p>Set (set())</p>
+        <p>Unordered, no duplicates.</p>
+        <code>nums = {1, 2, 3, 2}
+              print(nums)  # {1, 2, 3}</code>
+      </section>
+      <section class="main-section" id="Input_and_Output">
+        <header>Input and Output</header>
+        <p>Output: print()</p>
+        <code>print("Hello, world!")
+              name = "Alice"
+              print("Hi", name)</code>
+        <p>input: input()</p>
+        <code>name = input("Enter your name: ")
+              print("Hello", name)</code>
+        <p>input() always returns a string.</p>
+        <p>Convert input to number</p>
+        <code>age = int(input("Your age: "))</code>
+      </section>
+      <section class="main-section" id="Modules_and_Libraries">
+        <header>Modules and Libraries</header>
+        <p>Modules let you organize and reuse code. Python includes many built-in modules.</p>
+        <p>Import a module</p>
+        <code>import math
+              print(math.sqrt(16))  # 4.0</code>
+        <p>Import specific parts</p>
+        <code>from math import pi
+              print(pi)  # 3.141592...</code>
+        <p>Install external libraries</p>
+        <p>Use pip in your terminal:</p>
+        <code>pip install requests</code>
+        <p>Then use it in your code:</p>
+        <code>import requests</code>
+      </section>
+      <section class="main-section" id="Error_and_Exception_Handling">
+        <header>Error and Exception Handling</header>
+        <p>Use try / except to catch and handle errors.</p>
+        <p>Basic try/except</p>
+        <code>try:
+&nbsp;&nbsp;&nbsp;&nbsp;x = 10 / 0
+              except ZeroDivisionError:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Cannot divide by zero")</code>
+        <p>Catch all errors</p>
+        <code>try:
+&nbsp;&nbsp;&nbsp;&nbsp;do_something()
+              except Exception as e:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Error:", e)</code>
+        <p>Optional else and finally</p>
+        <code>try:
+&nbsp;&nbsp;&nbsp;&nbsp;x = int("42")
+              except ValueError:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Invalid number")
+              else:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Success")
+              finally:
+&nbsp;&nbsp;&nbsp;&nbsp;print("Done")</code>
+      </section>
+      <section class="main-section" id="Object-Oriented_Programming_(OOP)">
+        <header>Object-Oriented Programming (OOP)</header>
+        <p>Python supports classes and objects to model real-world entities.</p>
+        <p>Define a class</p>
+        <code>class Person:
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, name):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name
+
+&nbsp;&nbsp;&nbsp;&nbsp;def greet(self):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Hello,", self.name)</code>
+        <p>Create an object</p>
+        <code>p = Person("Alice")
+              p.greet()  # Hello, Alice</code>
+        <p>Inheritance</p>
+        <code>class Student(Person):
+&nbsp;&nbsp;&nbsp;&nbsp;def study(self):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(self.name, "is studying")</code>
+        <p>OOP helps organize large programs into reusable and logical components.</p>
+      </section>
+
+    </main>
+  </body>
+</html>
