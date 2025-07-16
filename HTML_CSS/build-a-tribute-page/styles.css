@@ -1,0 +1,53 @@
+html {
+  font-family: Arial sans-serif;
+  font-size: 18px
+}
+
+
+main {
+  background-color: rgb(209, 205, 205);
+  width: 98%;
+  margin: 45px auto;
+  padding: 25px 15px
+}
+
+h1,
+h2 {
+  text-align: center
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.5rem
+}
+
+#img-div {
+  background-color: rgb(229, 226, 226);
+  padding: 50px 15px
+}
+
+#image {
+  display: block;
+  width: 75%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 10px
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 1.1rem
+}
+
+#timeline-div {
+  width:60%;
+  margin: auto;
+  max-width: 600px
+}
+
+a {
+  color: rgb(13, 65, 170);
+}

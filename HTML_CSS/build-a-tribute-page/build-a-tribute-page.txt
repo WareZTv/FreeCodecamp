@@ -1,0 +1,100 @@
+** start of index.html **
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>César Millán tribute-page</title>
+    <meta name="description" content="Tribute page to Cesar Millan, the world-famous dog behaviorist known for his show 'The Dog Whisperer'. Learn about his journey, philosophy, and impact on dog training.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">César Millán – The "Dog Whisperer"</h1>
+      <figure id="img-div">
+        <img id="image" src="https://wallpapercave.com/wp/wp4170428.jpg" alt="Cesar Millan reunites with the dogs he once saved">
+        <figcaption id="img-caption">Cesar Millan reunites with the dogs he once saved</figcaption>
+      </figure>
+      <section id="tribute-info">
+        <div id="timeline-div">
+          <h2>Here’s a timeline of César Millán’s life:</h2>
+          <ul id="timeline">
+            <li><strong>1969</strong> – Born in Mexico into a humble family.</li>
+            <li><strong>1989</strong> – Immigrates to the United States with little money but a strong passion for dogs.</li>
+            <li><strong>1990s</strong> – Works hard to master dog behavior by learning through observation and hands-on experience.</li>
+            <li><strong>1999</strong> – Opens his first dog rehabilitation center in Los Angeles, helping aggressive and traumatized dogs regain balance.</li>
+            <li><strong>2004</strong> – Launches the TV series The Dog Whisperer with César Millán, which becomes an international hit, showcasing his method based on calm-assertive energy and non-verbal communication with dogs.</li>
+            <li><strong>2006</strong> – Publishes his first book, Cesar’s Way, a bestseller that popularizes his training techniques to a wide audience.</li>
+            <li><strong>2008</strong> – Founds the Cesar Millan Foundation, dedicated to dog rehabilitation and educating responsible pet owners.</li>
+            <li><strong>2010s</strong>–Present – Continues to develop educational programs, seminars, and TV shows, inspiring millions worldwide to better understand and train their dogs.</li>
+            <li><strong>Today</strong> – Recognized globally as one of the most influential dog behavior experts, César Millán continues his mission to improve the relationship between humans and dogs through methods based on instinct, discipline, and love.</li>
+          </ul>
+          <p id="citation"><i>“The relationship between people and dogs is built on trust, understanding, and the energy you bring.”</i>
+  — César Millán</p>
+        <div>
+        <h2>If you have time, I recommend exploring more about his journey and methods through his books and <a id="tribute-link" href="https://fr.wikipedia.org/wiki/C%C3%A9sar_Mill%C3%A1n#Liens_externes" target="_blank">documentaries</a>.<h2>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+  font-family: Arial sans-serif;
+  font-size: 18px
+}
+
+
+main {
+  background-color: rgb(209, 205, 205);
+  width: 98%;
+  margin: 45px auto;
+  padding: 25px 15px
+}
+
+h1,
+h2 {
+  text-align: center
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.5rem
+}
+
+#img-div {
+  background-color: rgb(229, 226, 226);
+  padding: 50px 15px
+}
+
+#image {
+  display: block;
+  width: 75%;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 10px
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 1.1rem
+}
+
+#timeline-div {
+  width:60%;
+  margin: auto;
+  max-width: 600px
+}
+
+a {
+  color: rgb(13, 65, 170);
+}
+
+** end of styles.css **
+
