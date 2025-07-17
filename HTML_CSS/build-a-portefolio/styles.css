@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&family=Playfair+Display:wght@600&display=swap');
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --project-tile: orange;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  color: var(--main-white);
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+hr {
+  border: 1px solid var(--main-white);
+  margin: 10px auto 40px;
+  max-width: 555px; 
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar a, .project-tile, #profile-link, footer a{
+  text-decoration: none;
+  color: var(--main-white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  height: 100%;
+}
+
+#navbar a {
+  padding: 0 17px;
+}
+
+#navbar a:hover {
+  background-color: var(--main-blue)
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
+  display: flex;
+  height: 70px;
+  background-color: var(--main-red);
+  justify-content: flex-end;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+#welcome-section {
+  height: 100vh;
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
+}
+
+#subtitle {
+  color: var(--main-red);
+  font-size: 2.5rem;
+  text-align: center;
+  font-style: italic
+}
+
+#projects {
+  padding: 95px 80px 90px;
+  background-color: var(--main-blue);
+}
+
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  gap: 40px;
+}
+
+
+.project > img {
+  width: 100%;
+  display: block;
+}
+
+#profile-link, .project-tile {
+  background-color: var(--main-gray);
+  text-align: center;
+}
+
+.project-tile {
+  height: 68px;
+}
+
+.project:hover .project-tile::before {
+  content: "<\00a0";
+  color: var(--project-tile);
+}
+
+.project:hover .project-tile::after {
+  content: "\00a0/>";
+  color: var(--project-tile);
+}
+
+#profile-link {
+  width: 145px;
+  height: 48px;
+  margin: 50px auto 0;
+}
+
+#profile-link:hover {
+  background-color: var(--main-red);
+}
+
+#profile-link:hover #arrow {
+  transform: translateX(2px)
+}
+
+#arrow {
+  transition: transform 0.2s linear 0ms
+}
+
+#about-me {
+  height: 100vh;
+  background-color: var(--main-gray);
+}
+
+#footer-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 6rem
+}
+
+#footer-question {
+  font-size: 2rem;
+  margin: 8px 0 40px;
+}
+
+#main-footer {
+  border-bottom: 4px solid var(--main-red);
+  height: calc(100vh - 109px);
+  padding: 30vh 0;
+}
+
+#secondary-footer {
+  height: 109px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#secondary-footer p {
+  width: 40%;
+}
+
+#icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#icon-container a:hover {
+  transform: translateY(7px);
+}
+
+#icon-container a {
+  transition: transform 0.3s linear 0ms;
+  padding: 12px 17px;
+}
+
+@media (min-width:1200px){
+  html {
+    font-size: 11px
+  }
+}
