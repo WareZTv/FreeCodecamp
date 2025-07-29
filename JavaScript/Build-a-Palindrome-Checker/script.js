@@ -30,7 +30,8 @@ const isPalindrome = text => {
   return true
 }
 
-const updateResult = () => {
+const updateResult = (event) => {
+  event.preventDefault();
   if (textInput.value === "") {
     alert("Please input a value")
     return
