@@ -1,6 +1,6 @@
 const textInput = document.getElementById("text-input");
 const checkButton = document.getElementById("check-btn");
-const resultOutput = document.getElementById("result");
+const result = document.getElementById("result");
 const form = document.querySelector("form");
 
 const preFormatText = text =>
