@@ -1,6 +1,7 @@
 const textInput = document.getElementById("text-input");
 const checkButton = document.getElementById("check-btn");
 const resultOutput = document.getElementById("result");
+const form = document.querySelector("form");
 
 const preFormatText = text =>
   text.replace(/[^a-z0-9]/gi, "").toLowerCase()
@@ -47,5 +48,5 @@ const updateResult = (event) => {
   
 }
 
-checkButton.addEventListener("submit", updateResult);
+form.addEventListener("submit", updateResult);
 
