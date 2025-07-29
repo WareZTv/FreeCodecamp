@@ -47,5 +47,5 @@ const updateResult = (event) => {
   
 }
 
-checkButton.addEventListener("click", updateResult);
+checkButton.addEventListener("submit", updateResult);
 
