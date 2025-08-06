@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:wght@800&family=Roboto+Mono:wght@420&display=swap');
+
+
+
+:root {
+  --phone-colors: #dfdfe2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 35px;
+  background-color: #3b3b4f;
+  color: #0a0a23;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 35px;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  width: 311px; 
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+#smartphone {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 17px;
+  background-color: black;
+  width: 250px;
+  padding: 0 13px 15px;
+  border-radius: 13px;
+}
+
+#screen, #front-camera {
+  background-color: var(--phone-colors);
+  overflow: auto;
+}
+
+#front-camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 13px 0;
+}
+
+#screen {
+  height: 327px;
+  margin-bottom: 6px;
+  padding: 10px 0 2px;
+}
+
+#user-input {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 42px;
+  width: 90%;
+  font-size: 1.6rem;
+  padding: 0 8px;
+  text-align: center;
+}
+
+
+#results-div {
+  color: rgb(77, 56, 0);
+  font-size: 1.9rem;
+
+}
+
+#check-btn, #clear-btn {
+  background: linear-gradient(#ffffff, #928d86);
+  width: 90px;
+  height: 27px;
+  font-size: 1.7rem;
+}
+
