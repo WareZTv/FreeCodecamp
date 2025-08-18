@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Playfair+Display:wght@700&family=Lora&display=swap');
+
+
+:root {
+  --dark-blue: rgb(10, 10, 35);
+  --light-gray: rgb(223, 223, 226);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+  font-size: 1.6rem;
+  font-family: Lora;
+}
+
+h1 {
+  font-family: Playfair;
+  font-size: 3.8rem;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 2.8rem;
+  margin: 35px 0;
+}
+
+#change-due {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label[for="cash"] {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+#cash {
+  width: 210px;
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+#purchase-btn {
+  width: 100px;
+  height: 30px;
+  color: #0a0a23;
+  background: linear-gradient(#fecc4c, #ffac33);
+  border: 3px outset #feac32;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+
+#change-dispenser > div {
+  background-color: #99c9ff;
+}
+
+#total-container {
+  padding: 5px;
+  margin-left: 40px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border: 10px solid #99c9ff;
+  font-weight: bold;
+  background-color: black;
+}
+
+#total-container-support {
+  width: 45px;
+  height: 40px;
+  margin-left: 60px;
+}
+
+#dispenser-body {
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+  height: 250px;
+  padding: 20px 15px 10px;
+  border-radius: 40px 40px 0 0;
+  margin-bottom: 10px;
+}
+
+#dispenser-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: flex-start;
+  width: 81px;
+  height: 68px;
+}
+
+#dispenser-button {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+#cash-disponibility {
+  height: 100%;
+  background-color: white;
+  color: black;
+  width: 179px;
+  padding: 10px;
+}
+
+#cash-box {
+  width: 325px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+#dispenser-handle {
+  border-radius: 50%;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+
+}
