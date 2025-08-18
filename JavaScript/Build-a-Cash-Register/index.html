@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cash Register Project</title>
+    <meta name="description" content="The users enters a cash value which is used to pay an item. The Cash machine will give you the change">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2>Enzo Genovese</h2>
+    <h1>Cash Register Project</h1>
+    <div id="change-due"></div>
+    <label for="cash">Enter cash from customer:</label>
+    <input id="cash" type="number" name="cash">
+    <button type="button" id="purchase-btn">Purchase</button>
+    <div id="change-dispenser">
+      <p id="total-container">
+        Total: $<span id="price"></span>
+      </p>
+      <div id="total-container-support"></div>
+      <div id="dispenser-body">
+        <div id="dispenser-buttons-container">
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+          <div id="dispenser-button"></div>
+        </div>
+        <p id="cash-disponibility">
+          <strong>Change in drawer:</strong><br>
+          Pennies: $<span id="pennies"></span><br>
+          Nickels: $<span id="nickels"></span><br>
+          Dimes: $<span id="dimes"></span><br>
+          Quarters: $<span id="quarters"></span><br>
+          Ones: $<span id="ones"></span><br>
+          Fives: $<span id="fives"></span><br>
+          Tens: $<span id="tens"></span><br>
+          Twenties: $<span id="tenties"></span><br>
+          Hundreds: $<span id="hundreds"></span><br>
+        </p>
+      </div>
+      <div id="cash-box">
+        <div id="dispenser-handle"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
