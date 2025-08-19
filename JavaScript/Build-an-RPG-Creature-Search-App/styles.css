@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&family=Playfair+Display:wght@700&family=Open+Sans:wght@500;750&display=swap');
+
+:root {
+  --white-color: #f5f6f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans';
+  background-color: #1b1b32;
+  color: var(--white-color);
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 3rem;
+  margin: 8px 0;
+}
+
+h1 {
+  margin: 15px 0 25px;
+  font-family: 'Playfair Display';
+  font-size: 3.5rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--white-color);
+  padding: 15px 20px 30px;
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 0 0 rgba(223, 220, 220, 0.75)
+}
+
+#search-input {
+  width: 200px;
+  height: 40px;
+  font-size: 1.4rem;
+}
+
+#search-button {
+  width: 80px;
+  height: 41px;
+  border-radius: 20px;
+  border: none;
+}
+
+#output, label{
+  background-color: rgb(240, 241, 247);
+  color: #0a0a23;
+}
+
+label {
+  width: 100%;
+  text-align: center;
+}
+
+#search-button{
+  background-color: #7f21ab;
+  color: var(--white-color);
+}
+
+#output {
+  width: 416px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+#creature-name-row {
+  font-size: 1.85rem;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  width: 75px;
+  height: 30px;
+  font-size: 1.1rem;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+#creature-name, #special-name {
+  font-weight: 750;
+}
+
+#special-name {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+#special-description, #weight-row {
+  font-size: 1.4rem;
+}
+
+#special-description {
+  margin-top: 0;
+}
+
+table {
+  margin-top: 5px;
+  width: 100%;
+  border-spacing: 5px;
+  text-align: center;
+}
+
+th, td {
+  background-color: #7f21ab;
+}
+
+th {
+  font-weight: 750;
+}
+
+tr {
+  height: 43px;
+}
