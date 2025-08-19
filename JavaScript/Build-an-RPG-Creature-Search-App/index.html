@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RPG Creature Search App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2>Enzo Genovese</h2>
+    <h1>RPG Creature Search App</h1>
+    <main>
+      <label for="search-input">Search for Creature Name or ID:</label>
+      <input id="search-input" type="text" required>
+      <button id="search-button" type="button">Search</button>
+      <div id="output">
+        <p id="creature-name-row"><span id="creature-name">QUILLQUAKE</span> #<span id="creature-id">9</span></p>
+        <p id="weight-row">Weight: <span id="weight">145</span> Height: <span id="height">40</span></p>
+        <div id="types">
+          <div class="type water">WATER</div>
+          <div class="type rock">ROCK</div>
+        </div>
+        <p id="special-name">Blazing Reflex</p>
+        <p id="special-description">Increases speed when hit by a Fire-type move.</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Base</th>
+            <th>Stats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HP</td>
+            <td id="hp">85</td>
+          </tr>
+          <tr>
+            <td>Attack</td>
+            <td id="attack">90</td>
+          </tr>
+          <tr>
+            <td>Defense</td>
+            <td id="defense">120</td>
+          </tr>
+          <tr>
+            <td>Sp. Attack</td>
+            <td id="special-attack">60</td>
+          </tr>
+          <tr>
+            <td>Sp. Defense</td>
+            <td id="special-defense">70</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td id="speed">40</td>
+          </tr>
+        </tbody>
+      </table>      
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
