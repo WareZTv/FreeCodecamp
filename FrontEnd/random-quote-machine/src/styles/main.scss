@@ -1,0 +1,56 @@
+/*main.scss*/
+@use "sass:list";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+
+$colors : (
+  rgb(231, 76, 60),
+  rgb(22, 160, 133), 
+  rgb(189, 187, 153), 
+  rgb(44, 62, 80), 
+  rgb(243, 156, 18),
+  rgb(52, 34, 36),
+  rgb(155, 89, 182),
+  rgb(39, 174, 96),
+  rgb(119, 177, 169),
+  rgb(251, 105, 100),
+  rgb(71, 46, 50)
+);
+
+$len: list.length($colors);
+
+@for $i from 1 through $len {
+  .bg-color-#{$i - 1} {
+    background-color: list.nth($colors, $i) !important;
+    transition: background-color 2s ease;
+  }
+  .txt-color-#{$i - 1} {
+    color: list.nth($colors, $i) !important;
+    transition: color 2s ease;
+  }
+}
+
+:root {
+  --bs-body-font-family: 'Raleway', sans-serif;
+  --colors-length: #{$len};
+}
+
+.bg-secondary {
+  background-color: white !important;
+}
+
+.txt-secondary {
+  color: white !important;
+}
+
+body {
+  font-weight: 500;
+}
+
+#quote-box {
+    width: 550px;
+}
+
+#signature {
+    font-size: 12.8px;
+}
+
