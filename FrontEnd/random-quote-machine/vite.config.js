@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/FreeCodecamp/FrontEnd/random-quote-machine/',
   build: {
-    outDir: 'dist',
+    outDir: '../random-quote-machine-dist',
     emptyOutDir: true
   }
 })
