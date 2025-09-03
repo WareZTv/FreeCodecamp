@@ -1,0 +1,41 @@
+// ⚠️ FICHIER GÉNÉRÉ — ne pas éditer à la main
+// Généré automatiquement depuis src/lib/ids.js
+$Expand-editor-id: "expandEditor";
+$Expand-editor-selector: "#expandEditor";
+$Expand-preview-id: "expandPreview";
+$Expand-preview-selector: "#expandPreview";
+$Editor-main-id: "editor";
+$Editor-main-selector: "#editor";
+$Previewer-main-id: "previewer";
+$Previewer-main-selector: "#previewer";
+$Preview-main-id: "preview";
+$Preview-main-selector: "#preview";
+$EditorWrapper-main-id: "editorWrapper";
+$EditorWrapper-main-selector: "#editorWrapper";
+
+$ids-map: (
+  "Expand-editor": (
+    id: $Expand-editor-id,
+    selector: $Expand-editor-selector,
+  ),
+  "Expand-preview": (
+    id: $Expand-preview-id,
+    selector: $Expand-preview-selector,
+  ),
+  "Editor-main": (
+    id: $Editor-main-id,
+    selector: $Editor-main-selector,
+  ),
+  "Previewer-main": (
+    id: $Previewer-main-id,
+    selector: $Previewer-main-selector,
+  ),
+  "Preview-main": (
+    id: $Preview-main-id,
+    selector: $Preview-main-selector,
+  ),
+  "EditorWrapper-main": (
+    id: $EditorWrapper-main-id,
+    selector: $EditorWrapper-main-selector,
+  ),
+);

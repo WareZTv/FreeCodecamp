@@ -1,0 +1,66 @@
+@use "./ids.generated" as *;
+@use "./markdown" as *;
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto&family=Noto+Sans&family=Noto+Color+Emoji&display=swap');
+
+body {
+  font-family: Roboto, 'Noto Sans', 'Noto Color Emoji',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+#{$EditorWrapper-main-selector} {
+width: 455px;
+}
+
+#{$Previewer-main-selector} {
+width: 515px;
+}
+
+@media (min-width: 650px) {
+  #{$EditorWrapper-main-selector} {
+    width: 545px;
+  }
+  #{$Previewer-main-selector} {
+    width: 628px;
+  }
+}
+
+@media (min-width: 850px) {
+  #{$EditorWrapper-main-selector} {
+    width: 594px;
+  }
+  #{$Previewer-main-selector} {
+    width: 798px;
+  }
+}
+
+#app {
+    background-color: rgb(135, 181, 181);
+}
+
+.composant {
+    box-shadow: rgb(58, 95, 95) 1px 1px 10px 2px;
+    border: 1px solid rgb(29, 47, 47);
+}
+
+header {
+    background-color: rgb(74, 163, 163);
+}
+
+.content {
+    background-color: rgb(192, 216, 216);
+}
+
+#{$Preview-main-selector} {
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.header-title {
+    font-family: 'Russo One', sans-serif;
+}
+
+
